@@ -204,6 +204,10 @@ footer {
     font-size: 13px;
     margin-top: 23px;
 }
+.nav__block2 a:hover, .nav__block3 a:hover{
+    color: #49A144;
+    transition: 0.3s;
+}
 .nav__block2, .nav__block3 {
     margin-top: 16px;
 }
@@ -217,7 +221,26 @@ footer {
     display: flex;
     margin-bottom: 48px;
 }
-
+.apps {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.appstore {
+    margin-right: 41px;
+}
+.footer__data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.footer__data a {
+    color: #fff;
+}
+.footer__data a:hover {
+    border-bottom: 1px solid #fff;
+}
 @media screen and (max-width:768px) {
     .stores__item {
         flex: 1 1 40%;
