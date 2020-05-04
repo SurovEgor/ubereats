@@ -5,20 +5,21 @@ body {
     font-size: 13px;
     line-height: 21px;
 }
+a {
+    color:#000;
+    text-decoration: none;
+}
 header {
     height: 72px;
     box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 .header__cover {
     margin: 0 auto;
-    max-width: 1124px;
+    max-width: 956px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-}
-.header__logo {
-    margin-left: 8px;
 }
 .header__button {
     border: 1px solid #E0E0E0;
@@ -41,18 +42,113 @@ header {
 .header__icon {
     cursor: pointer;
     vertical-align: middle;
-    margin-right: 18px;
 }
-@media screen and (min-width:1124px) {
-    header {
-          padding: 0 81px;
+.main__cover {
+    max-width: 956px;
+    margin: 0 auto;
+}
+.main_search {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid  rgba(75, 75, 75, 0.3);
+    color: #626262;
+    opacity: 0.5;
+    width: 100%; 
+    font-size: 16px;
+    line-height: 24px;
+    margin: 56px 0;
+}
+.main__form {
+    width: 100%;
+    text-align: center;
+}
+main {
+    padding: 0 8px;
+}
+.stores__titile {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: normal;
+    margin: 0;
+}
+.stores__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.stores__item {
+    background: rgba(75, 75, 75, 0.04);
+    padding-bottom: 20px;
+    margin-top: 16px;
+    flex: 1 1 30%;
+    margin-right: 12px;
+}
+.stores__item:nth-child(3n+3) {
+    margin-right: 0;
+}
+.stores__item h3 {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 16px 0 0 0;
+}
+.stores__item h3 a {
+    color: #1D1D1D;
+}
+.stores__item p {
+    line-height: 21px;
+    color: #626262;
+    font-size: 14px;
+    margin: 4px 0;
+}
+.stores__item span {
+    line-height: 21px;
+    color: #1D1D1D;
+    font-size: 13px; 
+}
+.stores__item img {
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+footer {
+    background: #262626;
+}
+.footer__wrapper {
+    max-width: 956px;
+    margin: 0 auto;
+}
+@media screen and (max-width:768px) {
+    .stores__item {
+        flex: 1 1 40%;
+    }
+    .stores__item:nth-child(2n+2) {
+        margin-right: 0;
+    }
+    .stores__item:nth-child(3n+3) {
+        margin-right: 12px;
     }
 }
+@media (max-width:1124px) {
+    .header__logo {
+     margin-left: 8px;
+    }
+    .header__icon {
+     margin-right: 18px;
+    }
+ }
+ 
 @media screen and (max-width:320px) {
     .header__icon {
         display: none;
     }
     .header__button {
         margin-right: 16px;
+    }
+    .stores__item {
+        flex: 1 1 100%;
+        margin: 0;
     }
 }
