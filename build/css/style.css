@@ -115,11 +115,109 @@ main {
 }
 footer {
     background: #262626;
+    color: #fff;
 }
 .footer__wrapper {
     max-width: 956px;
     margin: 0 auto;
 }
+.footer__brand img{
+    margin: 56px 0 40px 0;
+}
+.line {
+    color: #fff;
+    border:none;
+    border-bottom:1px solid #fff;
+    opacity: 0.4;
+}
+/*Блок с выбором языка*/
+.select {
+	position: relative;
+    width: 227px;
+    height: 40px;
+    color:#fff;
+    font-size: 13px;
+    margin-top: 32px;
+    background: #3B3B3B;
+    border-radius: 2px;
+}
+.select.is-active .select__body {
+	display: block;}
+
+.select__header {
+	border: 1px solid #3b3b3b;
+	cursor: pointer;
+	display: flex;
+}
+.select__current {
+	font-size: 18px;
+	line-height: 24px;
+	padding: 8px;
+}
+.select__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	height: 40px;
+	margin-left: auto;
+	text-align: center;
+	width: 40px;
+}
+.select__body {
+	border: 1px solid #3b3b3b;
+	border-top: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+}
+.select__item {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+    padding: 8px;  
+    background: #3B3B3B;
+}
+.select__item:hover {
+    background-color: rgb(48, 48, 48);
+}
+.world {
+    margin: 0 16px;
+}
+/*Блок с выбором языка*/
+.brand__text {
+    margin-top: 33px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.brand__text-green {
+    color: #49A144;
+}
+.footer__socials img{
+    margin-right: 14px;
+}
+.nav__block2 a, .nav__block3 a{
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 23px;
+}
+.nav__block2, .nav__block3 {
+    margin-top: 16px;
+}
+.nav__block2 {
+    margin-left: 97px;
+}
+.nav__block3 {
+    margin-left: 128px;
+}
+.footer__nav {
+    display: flex;
+    margin-bottom: 48px;
+}
+
 @media screen and (max-width:768px) {
     .stores__item {
         flex: 1 1 40%;
