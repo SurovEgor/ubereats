@@ -141,9 +141,12 @@ footer {
     background: #3B3B3B;
     border-radius: 2px;
 }
+.select:active {
+	background:#262626;
+}
 .select.is-active .select__body {
-	display: block;}
-
+    display: block;
+}
 .select__header {
 	border: 1px solid #3b3b3b;
 	cursor: pointer;
