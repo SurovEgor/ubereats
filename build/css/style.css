@@ -246,6 +246,20 @@ footer {
 }
 footer {
     padding: 0 8px;
+    position: relative;
+}
+.footer__up {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #59BD5A;
+    border:1px solid #59BD5A;
+    border-radius: 2px;
+    bottom: 24px; 
+    right: 16px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
 }
 @media screen and (max-width:768px) {
     .stores__item {
