@@ -115,7 +115,7 @@ main {
 }
 footer {
     background: #262626;
-    color: #fff;
+    color: #fff;    overflow: hidden;
 }
 .footer__wrapper {
     max-width: 956px;
@@ -241,6 +241,9 @@ footer {
 .footer__data a:hover {
     border-bottom: 1px solid #fff;
 }
+footer {
+    padding: 0 8px;
+}
 @media screen and (max-width:768px) {
     .stores__item {
         flex: 1 1 40%;
@@ -271,5 +274,23 @@ footer {
     .stores__item {
         flex: 1 1 100%;
         margin: 0;
+    }
+}
+@media screen and (max-width:768px) {
+    .footer__nav {
+        display: block;
+    }
+    .nav__block2 {
+        margin-left: 0;
+    }
+    .nav__block3 {
+        margin-left: 0;
+    }
+    .footer__data {
+        display: block;
+    }
+    .footer__data a{
+        display: block;
+        margin-top: 24px;
     }
 }
